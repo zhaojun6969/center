@@ -1,1 +1,0 @@
-.animate-marquee[data-v-796f88f1]{animation:marquee-796f88f1 20s linear infinite}.animate-marquee-reverse[data-v-796f88f1]{animation:marquee-reverse-796f88f1 60s linear infinite}@keyframes marquee-796f88f1{0%{transform:translate(calc(-50% - 12px))}to{transform:translate(0)}}@keyframes marquee-reverse-796f88f1{0%{transform:translate(0)}to{transform:translate(calc(-50% - 12px))}}
