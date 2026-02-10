@@ -2,29 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script async>
+    <script>
+      window.isWeChatBrowser = () => {
+  const ua = navigator.userAgent.toLowerCase()
+  return ua.indexOf('micromessenger') !== -1
+}
+    </script>
+    <!-- <script async>
+      if (!window.isWeChatBrowser()) {
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3Oq6lxGHef4Xi4Ws",ck:"3Oq6lxGHef4Xi4Ws",autoTrack:true,hashMode:true});
-</script>
+      }
+</script> -->
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5VXBTMN5M8"></script>
+<script>
+  if (!window.isWeChatBrowser()) {
+    var gtagScript = document.createElement('script');
+    gtagScript.async = true;
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5VXBTMN5M8';
+    document.head.appendChild(gtagScript);
+  }
+</script>
 <script async>
-  window.dataLayer = window.dataLayer || [];
+  if (!window.isWeChatBrowser()) {
+    window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-5VXBTMN5M8');
   gtag('config', 'AW-17607261918');
+   }
 </script>
+
     <link rel="icon"  href="https://draft-user.s3.us-east-2.amazonaws.com/images/353c3066-f894-4937-8eb7-cd2eb634c4d7.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Deotaland</title>
-    <script type="module" crossorigin src="/assets/js/index-BrLNRVYc.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/js/vendor-zwaLhAD5.js">
-    <link rel="modulepreload" crossorigin href="/assets/js/elementPlus-C3N3Ediy.js">
-    <link rel="modulepreload" crossorigin href="/assets/js/utils-D5HVl94d.js">
-    <link rel="stylesheet" crossorigin href="/assets/css/index-BhMxqchw.css">
+    <script type="module" crossorigin src="/assets/js/index-B4iIxVom.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/js/vendor-ClluBQmh.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/elementPlus-5sGCOaHt.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/utils-D5ZNaMwG.js">
+    <link rel="stylesheet" crossorigin href="/assets/css/index-QgYzCzvc.css">
   </head>
   <body>
     <div id="app"></div>
